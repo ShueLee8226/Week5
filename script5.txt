@@ -6,6 +6,7 @@ echo "Let look at some command"
 echo "let see what the dmesg is and what is show"
 dmesg | less
 sleep 5
+
 clear
 echo "First let look at some kernel sources and Boot parameters"
 less /var/log/kern.log
@@ -14,6 +15,7 @@ less /var/log/messages
 sleep 3
 cat /proc/cmdline
 sleep 3
+
 clear 
 echo "Now let look at the grub command"
 grub --help
