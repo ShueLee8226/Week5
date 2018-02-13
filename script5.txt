@@ -13,3 +13,5 @@ sleep 3
 clear 
 echo "Now let look at the grub command"
 grub --help
+echo "next let look at grub configuration file"
+grub-mkconfig -v
