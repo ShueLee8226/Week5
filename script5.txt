@@ -3,6 +3,10 @@
 clear
 echo "Welcome to week 5 script"
 echo "Let look at some command"
+echo "let see what the dmesg is and what is show"
+dmesg | less
+sleep 5
+clear
 echo "First let look at some kernel sources and Boot parameters"
 less /var/log/kern.log
 sleep 3
@@ -15,3 +19,5 @@ echo "Now let look at the grub command"
 grub --help
 echo "next let look at grub configuration file"
 grub-mkconfig -v
+echo "let look what grub instasll is"
+grub-install
